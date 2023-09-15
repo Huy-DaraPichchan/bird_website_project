@@ -11,7 +11,7 @@ function Card({ item }) {
 
   return (
     <div
-      className={`bg-white p-4 rounded-lg shadow-md cursor-pointer card-container ${
+      className={`bg-white p-4 rounded-lg shadow-md cursor-pointer card-container scale-90 hover:scale-100 ease-in-out ${
         expanded ? "expanded" : ""
       }`}
       onClick={toggleExpanded}

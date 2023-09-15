@@ -20,7 +20,7 @@ function Slideshow() {
   const slides = dummyData.slice(0, 5);
 
   return (
-    <div className='slider-container bg-gray-100 px-6 py-8'>
+    <div className='slider-container bg-gray-100 px-6 py-8 scale-90'>
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div
