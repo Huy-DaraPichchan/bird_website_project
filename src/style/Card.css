@@ -1,0 +1,62 @@
+/* Card.css */
+/* Card.css */
+.card-container {
+  margin: 16px;
+  padding: 16px;
+  max-height: 450px; /* Set the initial max-height as needed */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; /* Add transition for max-height */
+}
+
+.card-container.expanded {
+  max-height: 800px; /* Set the expanded max-height as needed */
+}
+
+.card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s; /* Add transition for card click effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Adjust hover scaling effect as needed */
+}
+
+.expanded {
+  width: 100%; /* Expand the card to full width */
+}
+
+.card-content-enter {
+  opacity: 0;
+}
+
+.card-content-enter-active {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card-content-exit {
+  opacity: 1;
+}
+
+.card-content-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.expanded-content {
+  display: block;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #ccc;
+  opacity: 0;
+  transition: opacity 0.3s, margin-top 0.3s;
+}
+
+.expanded .expanded-content {
+  opacity: 1;
+  margin-top: 0;
+}

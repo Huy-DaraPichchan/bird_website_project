@@ -1,0 +1,22 @@
+/* Animation for card visibility */
+.card {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .card.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  /* Animation for page navigation buttons */
+  .button-transition {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .button-transition:hover {
+    background-color: #4a90e2; /* Change to your desired hover background color */
+    color: #ffffff; /* Change to your desired hover text color */
+  }
+  

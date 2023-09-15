@@ -1,0 +1,22 @@
+.slider-container {
+    width: 75%; /* 75% of the page width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide-image img {
+    max-width: 100%; /* Resize the image to fit its container */
+  }
+  
+  .slide-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  
