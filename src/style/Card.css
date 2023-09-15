@@ -9,7 +9,7 @@
 }
 
 .card-container.expanded {
-  max-height: 800px; /* Set the expanded max-height as needed */
+  max-height: 1000px; /* Set the expanded max-height as needed */
 }
 
 .card {

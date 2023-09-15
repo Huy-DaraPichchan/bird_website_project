@@ -37,14 +37,14 @@ function Body() {
   };
 
   return (
-    <div className='w-full flex justify-center'>
-      <div className='w-3/4 bg-gray-100 p-6'>
-        <div className='container mx-auto'>
-          <div className='flex justify-between items-centerm'>
-            <div>
-              <h1 className='text-2xl font-semibold mb-4'>Filter: </h1>
+    <div className="w-full flex justify-center">
+      <div className="w-full md:w-3/4 bg-gray-100 p-6">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <h1 className="text-2xl font-semibold">List of recommended AI services</h1>
             </div>
-            <div>
+            <div className="md:flex space-x-4">
               {/* Button for Popularity Order */}
               <button
                 onClick={() => {
@@ -76,7 +76,7 @@ function Body() {
               </button>
             </div>
           </div>
-          <span className='block w-full h-px bg-gray-500 my-4' />
+          <span className="block w-full h-px bg-gray-500 my-4" />
           <ViewMode onViewModeChange={toggleViewMode} viewMode={viewMode} />
           {viewMode === "grid" ? (
             <GridView
@@ -93,7 +93,7 @@ function Body() {
           )}
           {/* Add indicator for navigation here */}
           {viewMode === "grid" && (
-            <div className='flex justify-center mt-4'>
+            <div className="flex justify-center mt-4">
               {Array(totalPages)
                 .fill()
                 .map((_, page) => (
