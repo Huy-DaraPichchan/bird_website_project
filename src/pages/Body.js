@@ -37,12 +37,12 @@ function Body() {
   };
 
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-3/4 bg-gray-100 p-6">
-        <div className="container mx-auto">
-          <div className="flex justify-between items-centerm">
+    <div className='w-full flex justify-center'>
+      <div className='w-3/4 bg-gray-100 p-6'>
+        <div className='container mx-auto'>
+          <div className='flex justify-between items-centerm'>
             <div>
-              <h1 className="text-2xl font-semibold mb-4">Filter: </h1>
+              <h1 className='text-2xl font-semibold mb-4'>Filter: </h1>
             </div>
             <div>
               {/* Button for Popularity Order */}
@@ -76,31 +76,41 @@ function Body() {
               </button>
             </div>
           </div>
-          <span className="block w-full h-px bg-gray-500 my-4" />
+          <span className='block w-full h-px bg-gray-500 my-4' />
           <ViewMode onViewModeChange={toggleViewMode} viewMode={viewMode} />
           {viewMode === "grid" ? (
-            <GridView data={sortedData} itemsPerPage={itemsPerPage} currentPage={currentPage} />
+            <GridView
+              data={sortedData}
+              itemsPerPage={itemsPerPage}
+              currentPage={currentPage}
+            />
           ) : (
-            <ListView data={sortedData} itemsPerPage={itemsPerPage} currentPage={currentPage} />
+            <ListView
+              data={sortedData}
+              itemsPerPage={itemsPerPage}
+              currentPage={currentPage}
+            />
           )}
           {/* Add indicator for navigation here */}
-          <div className="flex justify-center mt-4">
-            {Array(totalPages)
-              .fill()
-              .map((_, page) => (
-                <button
-                  key={page}
-                  onClick={() => setCurrentPage(page + 1)}
-                  className={`${
-                    currentPage === page + 1
-                      ? "bg-blue-500 text-white"
-                      : "bg-gray-300 text-gray-700"
-                  } px-4 py-2 rounded-md m-2`}
-                >
-                  {page + 1}
-                </button>
-              ))}
-          </div>
+          {viewMode === "grid" && (
+            <div className='flex justify-center mt-4'>
+              {Array(totalPages)
+                .fill()
+                .map((_, page) => (
+                  <button
+                    key={page}
+                    onClick={() => setCurrentPage(page + 1)}
+                    className={`${
+                      currentPage === page + 1
+                        ? "bg-blue-500 text-white"
+                        : "bg-gray-300 text-gray-700"
+                    } px-4 py-2 rounded-md m-2`}
+                  >
+                    {page + 1}
+                  </button>
+                ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
