@@ -86,6 +86,66 @@ export default function Navbar() {
                 </div>
               </a>
             </li>
+
+            <li>
+              <a
+                href='/'
+                className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
+              >
+                <div className='flex items-center'>
+                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
+                  Coding
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href='/'
+                className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
+              >
+                <div className='flex items-center'>
+                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
+                  Music
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href='/'
+                className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
+              >
+                <div className='flex items-center'>
+                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
+                  Illustration
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href='/'
+                className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
+              >
+                <div className='flex items-center'>
+                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
+                  Data analysis
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href='/'
+                className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
+              >
+                <div className='flex items-center'>
+                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
+                  Q&A format
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
