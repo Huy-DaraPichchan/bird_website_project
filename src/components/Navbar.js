@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { BsFolder2 } from "react-icons/bs";
+import { BsFolder2, BsClipboardData } from "react-icons/bs";
+import { LiaLaptopCodeSolid, LiaMusicSolid } from "react-icons/lia";
+import { PiPaintBrush } from "react-icons/pi";
+import { FaMobileAlt } from "react-icons/fa";
 import Logo from '../assets/logo.png'
 
 export default function Navbar() {
@@ -93,7 +96,7 @@ export default function Navbar() {
                 className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
               >
                 <div className='flex items-center'>
-                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
+                  <LiaLaptopCodeSolid className='mr-3 h-6 w-6 text-birdCustom' />
                   Coding
                 </div>
               </a>
@@ -105,7 +108,7 @@ export default function Navbar() {
                 className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
               >
                 <div className='flex items-center'>
-                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
+                  <LiaMusicSolid className='mr-3 h-6 w-6 text-birdCustom' />
                   Music
                 </div>
               </a>
@@ -117,7 +120,7 @@ export default function Navbar() {
                 className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
               >
                 <div className='flex items-center'>
-                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
+                  <PiPaintBrush className='mr-3 h-6 w-6 text-birdCustom' />
                   Illustration
                 </div>
               </a>
@@ -129,7 +132,7 @@ export default function Navbar() {
                 className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
               >
                 <div className='flex items-center'>
-                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
+                  <BsClipboardData className='mr-3 h-6 w-6 text-birdCustom' />
                   Data analysis
                 </div>
               </a>
@@ -141,8 +144,8 @@ export default function Navbar() {
                 className='my-6 block font-bold bg-blackCustom hover:opacity-70 text-white px-6 py-3 rounded-lg text-lg'
               >
                 <div className='flex items-center'>
-                  <BsFolder2 className='mr-3 h-6 w-6 text-birdCustom' />
-                  Q&A format
+                  <FaMobileAlt className='mr-3 h-6 w-6 text-birdCustom' />
+                  Mobile
                 </div>
               </a>
             </li>
