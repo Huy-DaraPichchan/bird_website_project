@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
 import Rating from "react-rating-stars-component";
 import {BsStarHalf, BsStarFill, BsStar} from "react-icons/bs"
 
 
 
 const StarRating = ({ review }) => {
+
+  const [rating, setRating] = useState(review);
+
+  useEffect(() => {
+    setRating(review);
+  }, [review]);
+
   return (
     <div>
       <Rating
-        value={review}
+        value={rating}
         count={5}
         size={24}
         edit={false}

@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`bg-grayCustom py-6 px-8 ${showMenu ? "open-menu" : ""}`}
+      className={`bg-grayCustom py-6 px-8 ${showMenu ? "open-menu" : ""} sticky top-0 z-20`}
     >
       <nav className='container mx-auto flex justify-between items-center w-full'>
         <div className='flex items-center'>

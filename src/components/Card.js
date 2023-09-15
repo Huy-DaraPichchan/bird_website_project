@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Rating from "../components/Rating";
+import StarRating from "../components/Rating";
 import "../style/Card.css";
 
 function Card({ item }) {
@@ -11,7 +11,7 @@ function Card({ item }) {
 
   return (
     <div
-      className={`bg-white p-4 rounded-lg shadow-md card-container ${
+      className={`bg-white p-4 rounded-lg shadow-md cursor-pointer card-container ${
         expanded ? "expanded" : ""
       }`}
       onClick={toggleExpanded}
@@ -25,7 +25,7 @@ function Card({ item }) {
       </div>
       <h2 className='text-xl font-semibold my-4'>{item.name}</h2>
       <div className='flex justify-start pb-3 mt-3 mb-4'>
-        <Rating review={item.review} />
+        <StarRating review={item.review} />
       </div>
       <p className={`text-base text-gray-600 ${expanded ? "expanded" : ""}`}>
         {item.description}

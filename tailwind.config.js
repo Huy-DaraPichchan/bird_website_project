@@ -15,6 +15,7 @@ module.exports = {
         footerCustom: "#F3F3F3",
         grayCustom2: "#F7F7F7",
         cyanCustom: "#12AEC3",
+        grayCustom3: "#F1FAF9",
       }
     },
   },
